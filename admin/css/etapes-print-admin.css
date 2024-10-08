@@ -1,0 +1,225 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#etapes_print_select_multiple {
+  width: 100%;
+  height: 200px;
+}
+
+#etapes_print_format_default_value {
+  width: 100;
+}
+
+#etapes_print_product_data div.options_group p.form-field label {
+  font-weight: bold;
+}
+
+/* Styles */
+.etapes_print_input {
+  display: inline-block;
+}
+
+.etapes_print_input.price_debugger {
+  width: 100%;
+}
+
+.etapes_print_input.delivery_price {
+  width: 100px;
+}
+
+.etapes_print_input.price_array {
+  width: 100%
+}
+
+.etapes_print_input.default_quantity {
+  width: 100px;
+}
+
+.etapes_print_input.delay_delivery {
+  width: 100px;
+}
+
+button.etapes_print_button {
+  margin-top: 3em;
+}
+
+.etapes_print_select_input {
+  width: 100%;
+}
+.btn-facture-achat{
+  background: #363333;
+  border-color: #383838;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  font-size: 12px;
+  padding: 4px;
+  margin-top: 28px;
+}
+.border-pep{
+  border: 1px solid #3c434a;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+  color: #3c434a;
+}
+.msg_pep{
+  color:#AA0000;
+  margin:10px;
+  
+}
+.pageFactureAchat{
+  display:flex;
+  align-items: center;
+}
+.pageFactureAchat .form_download{
+  flex-grow:2;
+}
+.pageFactureAchat .form_download .blocs_download_rib{
+  background:#00b1ca;
+  width: max-content;
+  margin:10px;
+  padding:10px;
+}
+.pageFactureAchat .form_download .blocs_download_rib .label_download_rib{
+  cursor: pointer;color: #fff;font-weight: bold;
+}
+.pageFactureAchat .form_relever{
+  flex-grow:8;
+}
+.pageFactureAchat .form_relever h2{
+  text-transform: uppercase;
+  color: #00b1ca;
+  font-weight: bold;
+}
+.pageFactureAchat .form_relever .blocs_factures{
+  display: flex;
+  align-items: center;
+}
+.pageFactureAchat .form_relever .blocs_factures .bloc_select_facture{
+  flex-grow: 3;
+}
+.pageFactureAchat .form_relever .blocs_factures .bloc_select_facture .select_facture{
+  border: none;
+  box-shadow: 0px 3px 0px 0px #868695;
+  border-radius: 0px;
+  background-color:#f0f0f1;
+  font-weight: bold;
+  color:#8c8f94
+}
+
+.pageFactureAchat .form_relever .blocs_factures .blocs_select_relever{
+  flex-grow: 10;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  align-items: baseline;
+}
+.pageFactureAchat .form_relever .blocs_factures .blocs_select_relever .select_relever{
+  background-color: #00b1ca;color: #fff;border: #00b1ca;
+}
+.pageFactureAchat .form_relever .blocs_factures .blocs_select_relever .label_download_fact_mois{
+  margin: 10px;padding: 10px;border: 1px solid #00b1ca;background-color: #fff;
+}
+
+
+/* product general panel*/
+#product_custom_field_general label{
+  color: black;
+  font-weight: 500;
+}
+
+._remise_revendeur_comprise{
+  position: absolute;
+  left: 10.1rem;
+  top: 18px;
+  opacity: 0.7;
+}
+
+#product_custom_field_general label {
+  width: 251px !important;
+}
+._prix_achat_ht_field {
+  position: relative;
+}
+
+.div_beneficiaire{
+  display: flex;
+}
+._marge_beneficiaire_field {
+  width: 40%;
+}
+
+._marge_beneficiaire_field input{
+  width: 74%;
+}
+
+.btn_beneficiaire{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -8%;
+}
+
+.button-primary-e{
+  margin-right: 4px !important;
+  border-radius: 0 !important;
+}
+/* end product general panel*/
+
+
+/* Facture achat style */
+.notification_facture{
+  display: flex;
+}
+.column_one{
+  width: auto;
+  margin: auto;
+}
+.column_two{
+  width: 98%;
+  background: #e1e1e1;
+  padding: 14px 36px;
+  margin-left: 30px;
+  border-radius: 2px;
+}
+.div_col{
+  font-size: 43px;
+  text-align: center;
+  background: #9b9b9b;
+  border-radius: 50%;
+  padding: 20px;
+  height: 22px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.column_two h4{
+  font-weight: 700;
+  font-size: 12px;
+  color: #005366;
+}
+.column_two p{
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+.column_two p span{
+  font-weight: 600;
+  color: #cb0042;
+}
+.ic{
+  position: absolute;
+  left: -10px;
+  top: -5px;
+}
+.ic:before{
+  content: "\e603";
+  font-family: dashicons;
+  color: #f5aa00;
+  font-family: "icomoon";
+  font-size: 29px;
+}
+
+

@@ -1,0 +1,650 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+table.etapes_print_variations {
+  width: 100%
+}
+
+table.etapes_print_variations, table.etapes_print_quantities {
+  margin: 1rem 0;
+}
+
+table.etapes_print_variations tbody tr th.label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+table.etapes_print_variations tbody tr th.custom_label {
+  text-align: left;
+  font-size: 14px;
+}
+
+table.etapes_print_variations tbody tr th.title_section {
+  text-align: left;
+  font-weight: 600;
+  font-size: 22px;
+  border-color: hsla(var(--awb-color8-h),var(--awb-color8-s),var(--awb-color8-l),calc( var(--awb-color8-a) - 70% ));
+  border-bottom-width: 1px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+/**
+ * All Custom field css goes there
+ *
+ */
+#etapes_print_product_customization {
+  width: 100%;
+  display: flex;
+}
+
+.etapes_print_custom_field {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: unset;
+}
+
+.etapes_print_select {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.etapes_print_custom_field_option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  text-align: center;
+  padding: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border: 1px solid transparent;
+}
+
+.etapes_print_custom_field_option[hidden] {
+  display: none!important;
+}
+
+.etapes_print_custom_field_option img {
+  font-size: 9px;
+  overflow-wrap: break-word;
+}
+
+.etapes_print_custom_field_option p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .etapes_print_custom_field_option {
+    width: 80px;
+  }
+  .etapes_print_custom_field_option p {
+    font-size: 11px;
+  }
+}
+
+.etapes_print_custom_field_option.active {
+  border: 1px solid #80725C;
+}
+
+.etapes_print_custom_field_option:hover {
+  border: 1px solid #beaa8a;
+  cursor: pointer;
+}
+
+.etapes_print_quantities tbody tr {
+  cursor: pointer;
+}
+
+.etapes_print_quantities tbody tr:hover {
+  background-color: #beaa8a;
+}
+
+.etapes_print_quantities tbody tr.active {
+  background-color: #80725C;
+  color: white;
+  font-weight: bold;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/** CUSTOM ETAPES PRINT GRID */
+.etape_print_price_grid {
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  font-size: 14px;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity {
+  width: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+  .etape_print_price_grid div.etape_print_price_grid_quantity {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .etape_print_price_grid div.etape_print_price_grid_quantity {
+    width: 60px;
+  }
+
+  .etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row.etapes_print_grid_devilery_price_header div.etapes_print_grid_delivery_price_item {
+    font-size: 10px;
+  }
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity div.etapes_print_grid_quantity_item {
+  width: 100%;
+  height: 40px;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity div.etapes_print_grid_quantity_item.etapes_print_grid_quantity_header{
+  font-weight: bold;
+  border: unset;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity div.etapes_print_grid_quantity_item.etapes_print_grid_quantity_header:hover {
+  border: unset;
+  box-shadow: unset;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_devilery_price {
+  flex: 1;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row div.etapes_print_grid_delivery_price_item {
+  display: inline-block;
+  width: 30%;
+  height: 40px;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row.etapes_print_grid_devilery_price_header div.etapes_print_grid_delivery_price_item {
+  font-weight: bold;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity div.etapes_print_grid_quantity_item,
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row div.etapes_print_grid_delivery_price_item {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+  border-radius: 3px;
+  background-color: #F7F7F7;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity div.etapes_print_grid_quantity_item:hover,
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row div.etapes_print_grid_delivery_price_item:hover {
+  background-color: #e3e3e3;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row div.etapes_print_grid_delivery_price_item.active {
+  background-color: #beaa8a;
+  border-color: #beaa8a;
+  font-weight: bold;
+  color: white;
+}
+
+.etape_print_price_grid div.etape_print_price_grid_quantity div.etapes_print_grid_quantity_item.active,
+.etape_print_price_grid div.etape_print_price_grid_devilery_price div.etapes_print_grid_devilery_price_row.etapes_print_grid_devilery_price_header div.etapes_print_grid_delivery_price_item.active {
+  background-color: #D6E3E9;
+  border: 2px solid #367291;
+  color: black;
+}
+
+ /**
+ * Simple HTML/CSS switch
+ */
+.etapes_print_vat_switch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.etapes_print_vat_switch .switch {
+  display: inline-block !important;
+  position: relative;
+  width: 36px;
+  height: 18px;
+  border-radius: 14px;
+  background: #dfd9ea;
+  transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 5px!important;
+}
+.etapes_print_vat_switch .switch::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fafafa;
+  border-radius: 50%;
+  transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.etapes_print_vat_switch .switch:active::before {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+}
+.etapes_print_vat_switch input:checked + .switch {
+  background: #beaa8a;
+}
+.etapes_print_vat_switch input:checked + .switch::before {
+  left: 19px;
+  background: #fff;
+}
+.etapes_print_vat_switch input:checked + .switch:active::before {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+}
+.etapes_print_vat_switch .etapes_print_vat_switch_label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0.5px;
+}
+
+.etape_print_price_grid_quantity .etapes_print_grid_quantity_item input.etapes_print_quantity_input {
+  width: 100% !important;
+  height: 100%;
+  border: 0px solid transparent;
+  margin: 0!important;
+  border-radius: 0px;
+  background-color: #e3e3e3;
+  font-size: 13px;
+}
+
+.etape_print_price_grid_quantity .etapes_print_grid_quantity_item input.etapes_print_quantity_input:focus {
+  outline: none;
+}
+
+.etapes_print_quantity_input_label {
+  font-size: 12px;
+  display: flex;
+}
+
+/* CUSTOM QUANTITY BUTTON */
+button.etapes_print_button {
+  margin: 0px 8px;
+  text-transform: unset !important;
+  font-size: 12px;
+  background-color: transparent;
+  padding: 9px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  box-shadow: 0 orange;
+  height: 40px;
+  border: 1px solid black;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+button.etapes_print_button:hover, button.etapes_print_button:focus {
+  text-decoration: unset;
+  background-color: #beaa8a;
+  color: white;
+  border-color: #beaa8a;
+}
+
+.invalid {
+  /* border-color: orange; */
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.2em orange;
+}
+
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.2rem; }
+  75% { margin-left: -0.2rem; }
+  100% { margin-left: 0rem; }
+}
+
+/* AVADA COMPATIBILITIES */
+.fusion-woo-cart .fusion-button-wrapper {
+  display: block!important;
+}
+
+/* FILE UPLOAD DESIGN */
+#file_upload_container .etapes_print_upload_title {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#file_upload_container span.etapes_print_upload_info {
+  font-size: 13px;
+  text-align: center;
+}
+
+#file_upload_container .etapes_print_upload_input {
+  width: 150px;
+  font-size: 11px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#file_upload_container .etapes_print_upload_input label {
+  cursor: pointer;
+}
+
+#file_upload_container .etapes_print_upload_input:hover {
+  background-color: #8c7c66;
+}
+
+#file_upload_container .separator {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:rgb(164, 161, 161);
+  font-size: 11px;
+}
+
+#file_upload_container .separator:after,
+#file_upload_container .separator:before {
+  content: "";
+  display: block;
+  background: rgb(164, 161, 161);
+  width: 30%;
+  height:1px;
+  margin: 0 10px;
+}
+
+#file_upload_container .etapes_print_upload_drop {
+  /* background-color: lightcyan; */
+  border: 1px dashed #8c7c66;
+  color: #8c7c66;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#file_upload_container .etapes_print_upload_preview {
+  /* background-color: lightcyan; */
+  border: 1px dashed #8c7c66;
+  border-radius: 28px;
+  color: #8c7c66;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+#file_upload_container .etapes_print_upload_preview img {
+  width: 30px;
+}
+
+#file_upload_container .etapes_print_upload_preview span {
+  flex: 1;
+  margin-left: 5px;
+  font-size: 14px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+#file_upload_container .etapes_print_upload_preview button {
+  font-size: 12px;
+  height: 100%;
+  border-radius: 3px;
+  margin-left: 8px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#file_upload_container .etapes_print_upload_preview button:hover {
+  background-color: #8c7c66;
+  color: white;
+}
+
+#file_upload_container .etapes_print_upload_drop * {
+  transition-property: font-size, width;
+  transition-duration: 0.1s, 0.1s;
+}
+
+#file_upload_container .etapes_print_upload_drop img {
+  width: 40px;
+  pointer-events: none;
+}
+
+#file_upload_container .etapes_print_upload_drop.error {
+  border-color: orange;
+  color: orange;
+  border-width: 2px;
+}
+
+#file_upload_container .etapes_print_upload_drop.active {
+  border-color: #367291;
+  color: #367291;
+  font-size: 14px;
+  border-width: 2px;
+}
+
+#file_upload_container .etapes_print_upload_drop.active img {
+  width: 50px;
+}
+
+#file_upload_container .etapes_print_upload_drop label {
+  pointer-events: none;
+}
+
+#file_upload_container .etapes_print_upload_drop img.default {
+  display: block;
+}
+
+#file_upload_container .etapes_print_upload_drop img.outline {
+  display: none;
+}
+
+#file_upload_container .etapes_print_upload_drop img.error {
+  display: none;
+}
+
+#file_upload_container .etapes_print_upload_drop.active img.default,
+#file_upload_container .etapes_print_upload_drop.error img.default {
+  display: none;
+}
+
+#file_upload_container .etapes_print_upload_drop.active img.outline {
+  display: block;
+}
+
+#file_upload_container .etapes_print_upload_drop.error img.error {
+  display: block;
+}
+
+hr {
+  color: #8c7c66;
+  margin: 0 10px;
+}
+
+/* MODAL VISUALIZER */
+.etapes-print-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index:1000000;
+}
+
+.etapes-print-modal.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.etapes-print-modal-bg {
+  position: absolute;
+  background: lightgray;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+.etapes-print-modal-container {
+  background: white;
+  position: relative;
+  padding: 30px;
+  height: 600px;
+}
+
+.etapes-print-modal-container .etapes-print-wrapper {
+  display: flex;
+  margin: 10px;
+  height: 100%;
+}
+.etapes-print-modal-container .etapes-print-wrapper .page_selector{
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.etapes-print-modal-container .etapes-print-wrapper .page_selector .side {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(164, 161, 161);
+  color: rgb(164, 161, 161);
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 56px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.etapes-print-modal-container .etapes-print-wrapper .page_selector .side:not(.active):hover {
+  border: 1.5px solid #367291;
+  color: #367291;
+}
+
+.etapes-print-modal-container .etapes-print-wrapper .page_selector .active {
+  border: 2px solid #8c7c66;
+  color: #8c7c66;
+}
+
+.etapes-print-modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RESPONSIVE AND RECAP IMPLEMENTATION */
+#etapes_print_product_variation_panel {
+  flex: 1;
+}
+
+#etapes_print_product_variation_recap {
+  margin: 1rem;
+}
+
+#etapes_print_product_variation_recap .recap-container {
+  display: flex;
+  background: #FAFAFA;
+  padding: 20px;
+  transition: all .2s linear;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap {
+  display: block;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .head {
+  font-size: 24px; /* unresponsive */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item .title {
+  font-weight: 600;
+  color: black;
+  line-height: 30px;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item .value {
+  text-align: right;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item.total {
+  font-weight: 600;
+  font-size: 16px;
+  color: #978367;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item.total .title {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  color: #978367;
+  margin: 5px 0 10px 0;
+}
+
+#etapes_print_product_variation_recap .recap-container .order-recap .single_add_to_cart_button {
+  width: 100% !important;
+}
+
+#etapes_print_product_variation_recap .recap-container .product-recap {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item {
+    font-size: 11px;
+  }
+  #etapes_print_product_variation_recap .recap-container .order-recap .order-recap-item.total {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #etapes_print_product_variation_recap .recap-container {
+    display: none;
+  }
+}
